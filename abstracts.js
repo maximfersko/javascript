@@ -338,7 +338,7 @@ const options = {
         border: 'black',
         bg: 'red',
     },
-    makeTest: function() {
+    makeTest: function () {
         console.log('test');
     }
 }
@@ -347,7 +347,10 @@ options.makeTest();
 
 
 
-const {border, bg} = options.colors;
+const {
+    border,
+    bg
+} = options.colors;
 
 
 
@@ -357,13 +360,13 @@ console.log(Object.keys(options).length);
 console.log(options["colors"]["border"])
 
 const inf = {
-    myGF:{
-        Name:'ksusha',
-        secondName:'Minaeva',
-        old:14
+    myGF: {
+        Name: 'ksusha',
+        secondName: 'Minaeva',
+        old: 14
     },
-    colors:white,
-    gender:o 
+    colors: white,
+    gender: o
 }
 
 console.log(Object.keys(inf).length);
@@ -376,16 +379,119 @@ console.log(Object.keys(inf).length);
 //console.log(options);
 let counter = 0;
 for (let key in options) {
-    if (typeof(options[key]) === 'object') {
-        for  (let i in options[key]) {
-            console.log(`Свойство ${i} имеет значение ${options[key][i]}`); 
+    if (typeof (options[key]) === 'object') {
+        for (let i in options[key]) {
+            console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
             counter++;
         }
-    }else {
+    } else {
         console.log(`Свойство ${key} имеет значение ${options[key]}`);
         counter++;
     }
-    
+
 }
 
 console.log(counter);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const arr = [1, 2, 3, 4, 5, 6, 8];
+
+//arr.pop();
+arr.push(10);
+
+console.log(arr);
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+}
+
+for (let value of arr) {
+    console.log(value);
+}
+
+
+
+
+
+
+
+
+
+////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+const questionForUser = +prompt('how are your old?');
+
+const whatYourName = prompt('what is your name ?');
+
+
+
+function getName() {
+
+
+    if (whatYourName == 25) {
+        console.log('kokko');
+    } else {
+        console.log('yeeeah!')
+    }
+}
+
+getName();
+
+
+const object = {
+    Name: {},
+    old: questionForUser,
+    count: {}
+}
+
+function transData() {
+    if (questionForUser >= 18) {
+        console.log(object.old);
+        console.log("it is work!!");
+    } else if (questionForUser < 18) {
+        console.log('oh nooo ');
+    }
+
+}
+
+transData();
+
+console.log(object);
