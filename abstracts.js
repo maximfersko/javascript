@@ -413,15 +413,6 @@ console.log(counter);
 
 
 
-
-
-
-
-
-
-
-
-
 const arr = [1, 2, 3, 4, 5, 6, 8];
 
 //arr.pop();
@@ -436,6 +427,81 @@ for (let i = 0; i < arr.length; i++) {
 for (let value of arr) {
     console.log(value);
 }
+
+
+
+
+
+const arr = [1, 2, 3, 4, 5, 6, 8];
+
+arr.sort(compareNum);
+
+console.log(arr);
+
+function compareNum(a, b) {
+    return a - b;
+}
+
+
+
+arr.forEach(function (item, i, ar) {
+    console.log(`${i}: ${item} внутри массива  ${arr}`)
+});
+
+
+
+//arr.pop();
+//arr.push(10);
+
+console.log(arr.length);
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+}
+
+for (let value of arr) {
+    console.log(value);
+}
+
+
+
+
+const str = prompt('', '');
+
+const products = str.split(", ");
+
+console.log(products.join('; '));
+
+
+
+
+
+///////////////////////////////////
+
+
+
+
+
+
+const test = [1, 2, 4, 9, 6, 5];
+
+for (i = 0; i < test.length; i++) {
+    console.log(test[i]);
+}
+
+
+
+const oldPeople = [18, 46, 44, 98, 12, 56, 78, 89, 22, 11, 10, 78, 79];
+
+console.log(oldPeople);
+
+for (i = 0; i < oldPeople.length; i++) {
+    console.log(oldPeople[i]);
+}
+
+const oldPeople = [18, 46, 44, 98, 12, 56, 78, 89, 22, 11, 10, 78, 79];
+
+
 
 
 
