@@ -749,7 +749,9 @@ const q = {
     two: 2
 }
 
-const newObj = {...g};
+const newObj = {
+    ...g
+};
 
 
 
@@ -763,9 +765,9 @@ let str = "some";
 
 let strObj = new String(str);
 
-console.log(typeof(str));
+console.log(typeof (str));
 
-console(typeof(strObj));
+console(typeof (strObj));
 
 console.dir([1, 2, 3]);
 
@@ -774,7 +776,7 @@ console.dir([1, 2, 3]);
 const soldier = {
     health: 400,
     armor: 100,
-    sayHello: function() {
+    sayHello: function () {
         console.log('hello!')
     }
 };
@@ -866,13 +868,13 @@ const personalMovieDB = {
         for (let i = 1; i <= 3; i++) {
             let genre = prompt(`Ваш любимый жанр под ноиером ${i}`);
 
-            if (genre === '' || genre ==null) {
+            if (genre === '' || genre == null) {
                 console.log('Вы ввели некоректнные данные или вы не ввели их вообще  ');
                 i--;
             } else {
                 personalMovieDB.genres[i - 1] = genre;
             }
-                
+
         }
         personalMovieDB.genres.forEach((item, i) => {
             console.log(`Любимый жанр ${i + 1} - это ${item}`)
@@ -884,3 +886,144 @@ const personalMovieDB = {
 
 
 };
+
+
+
+
+
+//////////////////////////////////////
+
+
+
+
+
+
+
+
+function hello() {
+    console.log('hello world !!');
+}
+
+hello();
+
+function hi() {
+    console.log('say hiii !!!');
+}
+
+hi();
+
+const arr = [1, 14, 4, 20, 54, ],
+    sorted = arr.sort(compareNum);
+
+function compareNum(a, b) {
+    return a - b;
+}
+
+console.log(sorted);
+
+
+
+
+
+
+
+//////////////////////////////
+
+
+
+
+
+
+
+let x = 5;
+
+alert(x++);
+
+//[ ] + false - null + true
+
+console.log(([] + false - null + true));
+
+let y = 1;
+
+x = y = 2;
+
+console.log(x);
+
+console.log("1" [0]);
+
+console.log([] + 1 + 2);
+
+console.log(2 && 1 && null && 0 && undefined);
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////
+
+
+
+
+
+
+
+
+
+const test = +prompt('сколько тебе лет ?');
+const testSecond = +prompt('чему равно выражение 2 + 2 ?');
+
+const getTest = {
+    num: test
+};
+
+console.log(getTest);
+
+function ok() {
+    if (test || testSecond >= 18) {
+        console,
+        log('Урааа вам есть 18');
+    }
+    else if (testSecond != 25) {
+        console.log(' yeeeeeahh ');
+    } else {
+        console.log('kok');
+    }
+};
+
+ok();
+
+
+///
+///////////
+
+
+
+
+let x = 5;
+
+alert(x++);
+
+//[ ] + false - null + true
+
+console.log(([] + false - null + true));
+
+let y = 1;
+
+x = y = 2;
+
+console.log(x);
+
+console.log("1" [0]);
+
+console.log([] + 1 + 2);
+
+console.log(2 && 1 && null && 0 && undefined); /// запинается на лжи 
+
+console.log(!!(1 && 2) === (1 && 2));
