@@ -1027,3 +1027,135 @@ console.log([] + 1 + 2);
 console.log(2 && 1 && null && 0 && undefined); /// запинается на лжи 
 
 console.log(!!(1 && 2) === (1 && 2));
+
+
+
+
+
+
+
+
+
+//////////////////
+
+
+
+
+
+
+
+
+
+
+const Day = prompt('как прошел ваш день ?');
+const Old = +prompt('Сколько вам лет ?');
+const webDay = +prompt('как давно  вы сидите на этом сайте (ответ в днях ) ?');
+const Name = prompt('как вас зовут  ?');
+
+const obj = {
+    getDay: Day,
+    getOld: Old,
+    getName: Name,
+    web: webDay
+};
+
+console.log(obj);
+
+
+function concept() {
+
+    if (obj.getDay && obj.getOld && obj.getName === 18) {
+        console.log('wow!');
+    } else if (obj.getOld || obj.web <= 60) {
+        console.log('it is works!');
+    } else {
+        console.log(' ooo ');
+    }
+
+};
+
+concept()
+
+
+
+
+const quest = +prompt('how are you old ?');
+const one = +prompt('how are you old ?');
+const two = +prompt('how are you old ?');
+const three = +prompt('how are you old ?');
+const four = +prompt('how are you old ?');
+
+const getQuest = [quest, one, two, three, four];
+
+console.log(getQuest);
+
+
+
+
+
+
+function hello() {
+
+    alert('hello');
+}
+
+hello();
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////
+
+
+
+
+
+
+
+
+const getBox = {
+    data: box,
+    butt: buttons
+
+}
+
+console.log(getBox);
+
+const buttons = document.getElementsByTagNameNS('button');
+
+console.log(buttons);
+
+const circles = getElementByClassName('.circle');
+
+console.log(circles);
+
+
+
+
+
+alert('hello');
+
+const oko = +prompt('kokoko');
+
+const hearts = document.querySelectorAll('.heart');
+
+hearts.forEach(item => {
+    console.log(item);
+})
+
+const oneHeart = document.querySelector('.heart');
+console.log(oneHeart);
+
+
+
+
+
+
