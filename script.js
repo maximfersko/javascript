@@ -1,20 +1,76 @@
 'use strict'
 
+/*let array = [ "яблоко", "слива", "груша", "ананас", ];
+
+console.log(array[2])*/
 
 
+const questionMovie = prompt('how much you see movie');
+const newArray = +prompt('what are you doing?');
 
 
-do {
-    console.log(num);
-    num++;
+const arr = {
+    name: 'maxim',
+    secondName: 'bobrov',
+    old: 19,
+    gender: 'female',
+    DB: newArray
+};
+
+console.log(arr);
+
+function num() {
+    if (arr.DB < 12) {
+        console.log('ít is wooork !');
+    } else if (arr.DB > 12) {
+        console.log('bruh');
+    }else if (arr.DB === 12 ) {
+        alert('úihuhiuhiu');
+    }
 }
-while (num < 55);
+
+num();
 
 
-const num = 50;
 
-for ( let i = 1; i < 8; i++) {
-    console.log(num);
-    num++;
+const isMovieDB = [questionMovie, 5, 7];
+
+console.log(isMovieDB);
+
+
+const elem = document.querySelector('.koko');
+
+elem.forEach(item => {
+    item.remove();
+});
+
+
+
+
+function sayHello() {
+    console.log('uho');
 }
+
+sayHello();
+
+
+const number = +prompt('how are you old ?')
+
+
+const dataB = {
+    quest:number
+}
+
+console.log(dataB);
+
+
+
+
+
+
+
+
+
+
+
 

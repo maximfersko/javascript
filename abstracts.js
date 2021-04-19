@@ -1159,3 +1159,45 @@ console.log(oneHeart);
 
 
 
+do {
+    console.log(num);
+    num++;
+}
+while (num < 55);
+
+
+const num = 50;
+
+for ( let i = 1; i < 8; i++) {
+    console.log(i);
+    
+};
+
+
+for (let i = 0; i < 3 ; i++) {
+    console.log(i);
+};
+
+for (let i = 10; i < 30; i++) {
+    console.log(i);
+};
+
+
+for (let num = 279; num < 300; num++ ) {
+    console.log(num);
+};
+
+
+
+let sum = 0;
+
+while (true) {
+
+  let value = +prompt("Введите число", '');
+
+  if (!value) break; // (*)
+
+  sum += value;
+
+}
+console.log( 'Сумма: ' + sum );
