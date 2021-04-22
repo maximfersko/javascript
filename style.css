@@ -5,22 +5,14 @@
     background-color: blue;
 }
 
-.btn::before {
-    background: #ff7675;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    transition: all 0.6s ease;
+.secondBtn {
+
+    height: 40px;
+    width: 120px;
+    background-color: blueviolet;
+    border-radius: 20px;
 }
 
-.btn1::before{
-    width: 0%;
-    height: 100%;
-  }
-  
-.btn1:hover::before{
-    width: 100%;
-  }
+input {
+    border-radius: 10px;
+}

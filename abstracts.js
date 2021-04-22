@@ -586,7 +586,7 @@ function showMessage() {
 }
 
 showMessage();
-
+јя
 
 
 let sum = (a, b) => {
@@ -1201,3 +1201,266 @@ while (true) {
 
 }
 console.log( 'Сумма: ' + sum );
+
+
+/*let array = [ "яблоко", "слива", "груша", "ананас", ];
+
+console.log(array[2])*/
+
+
+const questionMovie = prompt('how much you see movie', '');
+const newArray = +prompt('what are you doing?', '');
+
+
+const arr = {
+    name: 'maxim',
+    secondName: 'bobrov',
+    old: 19,
+    gender: 'female',
+    DB: newArray
+};
+
+console.log(arr);
+
+function num() {
+    if (arr.DB < 12) {
+        console.log('ít is wooork !');
+    } else if (arr.DB > 12) {
+        console.log('bruh');
+    }else if (arr.DB === 12 ) {
+        alert('úihuhiuhiu');
+    }
+}
+
+num();
+
+
+
+const isMovieDB = [questionMovie, 5, 7];
+
+console.log(isMovieDB);
+
+
+
+
+
+
+
+
+//////////////////
+
+
+
+
+
+
+
+
+
+
+
+//const elem = document.querySelector('.koko');
+
+//elem.forEach(item => {
+//  item.remove();
+//});
+
+
+
+
+function sayHello() {
+    console.log('uho');
+}
+
+sayHello();
+
+
+const number = +prompt('how are you old ?', '');
+const accses = confirm('okey ?');
+
+const dataB = {
+    quest:number,
+    hoko:'íjhoho',
+    test:accses
+};
+
+function ok() {
+    if (dataB.test === true) {
+        console.log('true !');
+        alert('true');
+    } else if (dataB.test === false) {
+        alert('false');
+        console.log('false')
+    }
+}
+
+ok();
+
+
+
+// котекст вызова this
+
+let user = {
+    name: 'vasya',
+
+    sayHi:function() {
+        alert(this.name);
+    }
+
+}
+
+user.sayHi()
+
+
+
+let foho = 'yeees !!';
+
+
+function context() {
+    alert(this.foho);
+}
+
+
+
+
+/////////////////////////////////
+
+
+
+
+const btn = document.querySelector('#btn');
+
+btn.addEventListener('click', (e) => {
+    console.log(e);
+});
+
+
+
+/////////////
+
+
+
+
+
+
+
+
+
+
+const quest = +prompt('сколько тебе лет ?');
+const one = +prompt('рандомное число ?');
+const two = +prompt('сколько тебе лkok ?');
+
+
+const obj = {
+    first:quest,
+    two:one,
+    three:two
+}
+
+
+console.log(obj.first)
+
+
+
+const mas = [5, 7, 7, 9];
+
+
+const btn = document.querySelector('#firstBtn')
+
+btn.addEventListener('click', () => {
+    const secondQuest = +prompt('рандомное число ?')
+})
+
+
+const cli = document.querySelector('#secondBtn')
+
+cli.addEventListener('click', () => {
+    alert(obj.first)
+});
+
+const conditions = function  () {
+    if (obj.first === 18) {
+        alert('вам есть 18!!')
+    } else if (obj.first < 18) {
+        alert('вам нет 18 !!')
+    } else if (obj.first >= 18) {
+        alert('вам больше 18!!')
+    }
+}
+
+console.log(conditions)
+
+const questionNum = +prompt('Введите любое число.');
+const questionSecondNum = +prompt('Введите второе любое число.')
+
+const dataBase = {
+    oneQuest: questionNum,
+    twoQuestion:questionSecondNum
+}
+
+
+
+
+
+function num(oneQuest, twoQuestion) {
+    return a * b
+}
+
+console.log(num(5,8));
+
+
+
+
+
+
+
+
+
+
+
+/*const il = document.querySelectorAll('input')
+
+il.addEventListener('focus', () => {
+    alert('ok!')
+})
+
+
+const cli = document.querySelector('#secondBtn')
+
+cli.addEventListener('click', () => {
+    function num(a, b) {
+        return a + b
+    }
+    alert(num(a, b));
+})*/
+
+
+
+
+
+/////////////////////////
+
+
+
+
+
+// sum (2,3) == sum (2),(3) == 5
+
+function sum(a, b) {
+    if (b) {
+        return a + b
+    }
+
+    return  function (c) {
+        return a + c
+    }
+}
+
+console.log(sum(2, 3))
+console.log(sum(2)(3))
+
+
+
+
+//////////////////////
